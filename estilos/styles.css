@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 62,5%;
+    font-family: sans-serif; }
+
+body {
+    background-color: #860037;
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+  }
+
+.header {
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    background-color: beige;
+    transition: 0.5s;
+}
+
+#registro {
+    width: 400px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+.dato{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border:  1px solid black;
+}
+
+#botonform{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+}
+
+.selecciones{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card { 
+    background-color: #860037;
+    background: rgba(0, 0, 0, 0.3);
+    
+}
+
+#grupo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+table, th, td {
+    color: #fff;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+
+}
+
+th{
+    text-align: left;
+}
+
+#fixture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    font-size: 14px;
+
+}

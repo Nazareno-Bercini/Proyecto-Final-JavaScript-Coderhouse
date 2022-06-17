@@ -5,19 +5,198 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final</title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="/main.js"></script>
+    <link rel="stylesheet" href="./estilos/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <script src="./scripts/js/bootstrap.min.js"></script>
+    <script src="./scripts/main.js"></script>
+
 </head>
 <body>
-    <header>
-        <h1>Calculador de puntos</h1>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link"><img src=".//assets/img/LOGO-QATAR-2022-4-828x621.jpg" alt="" width="100">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#registro" class="nav-menu-link nav-link">Registrarse</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#selecciones" class="nav-menu-link nav-link">Eqiupos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#grupo" class="nav-menu-link nav-link">Grupo</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#fixture" class="nav-menu-link nav-link">Fixture</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <hr>
+    
+    <h1>Calculador de puntos</h1>
+    <form action="" method="post" id="registro">
+        <div class="form">
+            <h2>Registro</h2>
+            <div class="dato">
+                <input type="text" id="nombre" required><span class="barra"></span>
+                <label for="">Nombre</label>
+            </div>
+            <div class="dato">
+                <input type="email" id="email" required><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="dato">
+                <input type="password" id="contrasena" required><span class="barra"></span>
+                <label for="">Contraseña</label>
+            </div>
+            <button type="submit" id="botonform">Suscribirte</button>
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+
+        <div class="selecciones" id="selecciones">
+              <div class="card" style="width: 10rem;">
+                <img src="./assets/img/escudo.argentina.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Argentina</h3>
+                    <input type="hidden" id="selec1">
+                    <a href="" id="agregar-favoritos">Agregar a favoritos</a>
+                    <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 10rem;">
+                <img src="./assets/img/escudo.arabiasaudita.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Arabia Saudita</h3>
+                    <input type="hidden" id="selec2">
+                    <a href="" id="agregar-favoritos">Agregar a favoritos</a>
+                    <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 10rem;">
+                <img src="./assets/img/escudo.mexico.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Mexico</h3>
+                    <input type="hidden" id="selec3">
+                    <a href="" id="agregar-favoritos">Agregar a favoritos</a>
+                    <p class="card-text"></p>
+                </div>
+              </div>
+              <div class="card" style="width: 10rem;">
+                <img src="./assets/img/escudo.polonia.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Polonia</h3>
+                    <input type="hidden" id="selec4">
+                    <a href="" id="agregar-favoritos">Agregar a favoritos</a>
+                    <p class="card-text"></p>
+                </div>
+              </div>
+
+        </div>
+    
+
     <section>
-        <img src="./img/depositphotos_19103837-stock-photo-sports-equipment.jpg" alt="">
+        
+        <h2><center>Grupo C</center></h2>
+        <div id="grupo">
+            <table>
+                <tr>
+                    <th>Pos</th>
+                    <th>Equipo</th>
+                    <th>Pts</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PE</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>DIF</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th><img src="./assets/img/argentina.gif" alt=""> Argentina</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th><img src="./assets/img/arabiasaudita.gif" alt=""> Arabia Saudita</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th><img src="./assets/img/mexico.gif" alt=""> Mexico</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th><img src="./assets/img/polonia.gif" alt=""> Polonia</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>0</th>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div id="fixture">
+            <div id="fecha1">
+                <label for="arg1">Argentina</label>
+                <input type="number" name="arg1" id="arg1" size="4" value="0">
+                <input type="number" name="arab1" id="arab1" size="4" value="0">
+                <label for="arab1">Arabia</label>
+                <button id="verResultado"> Ver Resultado</button>
+                
+            </div>
+        <br>
+            <div id="fecha2">
+                <label for="arg2">Argentina</label>
+                <input type="number" name="arg2" id="arg2" size="4" value="0">
+                <input type="number" name="mex2" id="mex2" size="4" value="0">
+                <label for="mex2">Mexico</label>
+                <button id="verResultadoDos"> Ver Resultado</button>
+                
+            </div>
+        <br>
+            <div id="fecha3">
+                <label for="arg3">Argentina</label>
+                <input type="number" name="arg3" id="arg3" size="4" value="0">
+                <input type="number" name="pol3" id="pol3" size="4" value="0">
+                <label for="pol3">Polonia</label>
+                <button id="verResultadoTres"> Ver Resultado</button>
+                
+            </div>
+
+        </div>
+
+
     </section>
     <footer>
-        <h2>Desafio final Coderhouse</h2>
+        <h4>Desafio final Coderhouse</h4>
     </footer>
 </body>
 </html>
