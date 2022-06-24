@@ -138,6 +138,10 @@ th{
     align-items: center;
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+}
 footer{
     font-size: 14px;
 
