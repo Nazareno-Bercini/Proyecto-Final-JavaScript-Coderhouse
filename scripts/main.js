@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
         puntosPol.innerHTML = `${contadorPol += 1}`
       } else {
         if (argentinaTres.value < polonia.value) {
-          puntosPol.innerHTML = `${contador += 3}`
+          puntosPol.innerHTML = `${contadorPol += 3}`
         }
       }
     }
