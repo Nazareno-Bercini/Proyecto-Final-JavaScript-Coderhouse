@@ -97,10 +97,26 @@ body {
     margin-top: 20px;
 }
 
+
+#selecClasif{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
 .card { 
+    width: 18rem;
     background-color: #860037;
     background: rgba(0, 0, 0, 0.3);
+    left: 475px;
     
+}
+
+h3, h4, h5{
+    color: #fff;
+    text-align: center;
+
 }
 
 #grupo {

@@ -22,7 +22,7 @@
                     <a href="#registro" class="nav-menu-link nav-link">Registrarse</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#selecciones" class="nav-menu-link nav-link">Eqiupos</a>
+                    <a href="#selecClasif" class="nav-menu-link nav-link">Eqiupos</a>
                 </li>
                 <li class="nav-menu-item">
                     <a href="#grupo" class="nav-menu-link nav-link">Grupo</a>
@@ -39,15 +39,15 @@
         <div class="form">
             <h2>Registro</h2>
             <div class="dato">
-                <input type="text" id="nombre" required><span class="barra"></span>
+                <input type="text" id="nombre" required ><span class="barra"></span>
                 <label for="">Nombre</label>
             </div>
             <div class="dato">
-                <input type="email" id="email" required><span class="barra"></span>
+                <input type="email" id="email" required ><span class="barra"></span>
                 <label for="">Email</label>
             </div>
             <div class="dato">
-                <input type="password" id="contrasena" required><span class="barra"></span>
+                <input type="password" id="contrasena" required ><span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>
             <button type="submit" id="botonform">Suscribirte</button>
@@ -55,53 +55,12 @@
         </div>
     </form>
 
-        <div class="selecciones" id="selecciones">
-              <div class="card" style="width: 10rem;">
-                <img src="./assets/img/escudo.argentina.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 id="seleccion">Argentina</h3>
-                    <form action="">
-                        <input type="hidden" id="selec1">
-                        <button id="argfav">Agregar a favoritos</button>
-                    </form>
-                    <p class="card-text"></p>
-                </div>
-              </div>
-              <div class="card" style="width: 10rem;">
-                <img src="./assets/img/escudo.arabiasaudita.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 id="seleccion">Arabia Saudita</h3>
-                    <form action="">
-                        <input type="hidden" id="selec2">
-                        <button id="arabfav">Agregar a favoritos</button>
-                    </form>
-                    <p class="card-text"></p>
-                </div>
-              </div>
-              <div class="card" style="width: 10rem;">
-                <img src="./assets/img/escudo.mexico.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 id="seleccion">Mexico</h3>
-                    <form action="">
-                        <input type="hidden" id="selec3">
-                        <button id="mexfav">Agregar a favoritos</button>
-                    </form>
-                    <p class="card-text"></p>
-                </div>
-              </div>
-              <div class="card" style="width: 10rem;">
-                <img src="./assets/img/escudo.polonia.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 id="seleccion">Polonia</h3>
-                    <form action="">
-                        <input type="hidden" id="selec4">
-                        <button id="polfav">Agregar a favoritos</button>
-                    </form>
-                    <p class="card-text"></p>
-                </div>
-              </div>
 
+
+        <div class="card" id="selecClasif">
+            
         </div>
+        
     
 
     <section>
@@ -124,7 +83,7 @@
                 <tr>
                     <th>1</th>
                     <th><img src="./assets/img/argentina.gif" alt=""> Argentina</th>
-                    <th>0</th>
+                    <th id="ptsArg">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
@@ -136,7 +95,7 @@
                 <tr>
                     <th>2</th>
                     <th><img src="./assets/img/arabiasaudita.gif" alt=""> Arabia Saudita</th>
-                    <th>0</th>
+                    <th id="ptsArab">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
@@ -148,7 +107,7 @@
                 <tr>
                     <th>3</th>
                     <th><img src="./assets/img/mexico.gif" alt=""> Mexico</th>
-                    <th>0</th>
+                    <th id="ptsMex">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
@@ -160,7 +119,7 @@
                 <tr>
                     <th>4</th>
                     <th><img src="./assets/img/polonia.gif" alt=""> Polonia</th>
-                    <th>0</th>
+                    <th id="ptsPol">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
