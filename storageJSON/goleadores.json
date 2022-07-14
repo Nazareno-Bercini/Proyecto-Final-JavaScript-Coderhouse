@@ -1,0 +1,35 @@
+[
+    {
+        "jugador": "Miroslav Klose",
+        "goles": 16    
+    },
+    {
+        "jugador": "Ronaldo",
+        "goles": 15
+    },
+    {
+        "jugador": "Ger Muller",
+        "goles": 14    
+    },
+    {
+        "jugador": "Just Fontaine",
+        "goles": 13
+    },
+    {
+        "jugador": "Pele",
+        "goles": 12
+    },
+    {
+        "jugador": "Jürgen Klinsmann",
+        "goles": 11    
+    },
+    {
+        "jugador": "Sandor Kocsis",
+        "goles": 11    
+    },
+    {
+        "jugador": "Gabriel Batistuta",
+        "goles": 10    
+    }
+
+]

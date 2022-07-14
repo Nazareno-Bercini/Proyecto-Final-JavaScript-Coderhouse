@@ -109,7 +109,7 @@ body {
     width: 18rem;
     background-color: #860037;
     background: rgba(0, 0, 0, 0.3);
-    left: 475px;
+
     
 }
 
@@ -148,10 +148,29 @@ th{
     text-align: left;
 }
 
-#fixture {
+.container-botones {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+button {
+    display: inline-flex;
+    width: 25%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.container-estadisticas{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #fff;
+    list-style: none;
 }
 
 h2{

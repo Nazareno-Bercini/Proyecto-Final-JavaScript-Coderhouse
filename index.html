@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,42 +13,46 @@
     <script src="./scripts/main.js"></script>
 
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link"><img src=".//assets/img/LOGO-QATAR-2022-4-828x621.jpg" alt="" width="100">
             </a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="#registro" class="nav-menu-link nav-link">Registrarse</a>
-                </li>
+            <div>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a href="#registro" class="nav-menu-link nav-link">Registrarse</a>
+                    </li>
                 <li class="nav-menu-item">
                     <a href="#selecClasif" class="nav-menu-link nav-link">Eqiupos</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#grupo" class="nav-menu-link nav-link">Grupo</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#fixture" class="nav-menu-link nav-link">Fixture</a>
-                </li>
-            </ul>
+                        <a href="#grupo" class="nav-menu-link nav-link">Grupo</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#fixture" class="nav-menu-link nav-link">Fixture</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
+
     <h1>Calculador de puntos</h1>
     <form action="" method="post" id="registro">
         <div class="form">
             <h2>Registro</h2>
             <div class="dato">
-                <input type="text" id="nombre" required ><span class="barra"></span>
+                <input type="text" id="nombre" required><span class="barra"></span>
                 <label for="">Nombre</label>
             </div>
             <div class="dato">
-                <input type="email" id="email" required ><span class="barra"></span>
+                <input type="email" id="email" required><span class="barra"></span>
                 <label for="">Email</label>
             </div>
             <div class="dato">
-                <input type="password" id="contrasena" required ><span class="barra"></span>
+                <input type="password" id="contrasena" required><span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>
             <button type="submit" id="botonform">Suscribirte</button>
@@ -56,16 +61,67 @@
     </form>
 
 
-
-        <div class="card" id="selecClasif">
-            
-        </div>
+    <div class="container-botones">
+        <button class="boton" id="campeones"> Campeones Historicos</button>
+        <button class="boton" id="goleadores"> Goleadores Historicos</button>
         
-    
+    </div>
+    <div class="container-estadisticas">
+        <div id="cuadro"></div>
+    </div>
+
+    <h2>Grupo A</h2>
+    <div class="selecciones" id="selecciones">
+        <div class="card" style="width: 10rem;">
+            <img src="./assets/img/./Grupo-A/escudo.qatar.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 id="seleccion">Qatar</h3>
+                <form action="" class="formfav">
+                    <input type="submit" id="selec1" value="qatar">
+                    
+                </form>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width: 10rem;">
+            <img src="./assets/img/./Grupo-A/escudo.ecuador.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 id="seleccion">Ecuador</h3>
+                <form action="" class="formfav">
+                    <input type="submit" id="selec2" value="ecuador">
+                    
+                </form>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width: 10rem;">
+            <img src="./assets/img/./Grupo-A/escudo.senegal.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 id="seleccion">Senegal</h3>
+                <form action="" class="formfav">
+                    <input type="submit" id="selec3" value="senegal">
+                    
+                </form>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width: 10rem;">
+            <img src="./assets/img/./Grupo-A/escudo.paisesbajos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 id="seleccion">Paises bajos</h3>
+                <form action="" class="formfav">
+                    <input type="submit" id="selec4" value="paisesbajos">
+                    
+                </form>
+                <p class="card-text"></p>
+            </div>
+        </div>
+
+    </div>
+
 
     <section>
-        
-        <h2>Grupo C</h2>
+
         <div id="grupo">
             <table>
                 <tr>
@@ -82,62 +138,475 @@
                 </tr>
                 <tr>
                     <th>1</th>
-                    <th><img src="./assets/img/argentina.gif" alt=""> Argentina</th>
-                    <th id="ptsArg">0</th>
+                    <th><img src="./assets/img/./Grupo-A/qatar.gif" alt=""> Qatar</th>
+                    <th id="ptsQat">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
-                    <th>0</th>
+                    <th id="gfQat">0</th>
                     <th>0</th>
                     <th>0</th>
                 </tr>
                 <tr>
                     <th>2</th>
-                    <th><img src="./assets/img/arabiasaudita.gif" alt=""> Arabia Saudita</th>
-                    <th id="ptsArab">0</th>
+                    <th><img src="./assets/img/./Grupo-A/ecuador.gif" alt=""> Ecuador</th>
+                    <th id="ptsEcu">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
-                    <th>0</th>
+                    <th id="fgEcu">0</th>
                     <th>0</th>
                     <th>0</th>
                 </tr>
                 <tr>
                     <th>3</th>
-                    <th><img src="./assets/img/mexico.gif" alt=""> Mexico</th>
-                    <th id="ptsMex">0</th>
+                    <th><img src="./assets/img/./Grupo-A/senegal.gif" alt=""> Senegal</th>
+                    <th id="ptsSen">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
-                    <th>0</th>
+                    <th id="gfSen">0</th>
                     <th>0</th>
                     <th>0</th>
                 </tr>
                 <tr>
                     <th>4</th>
-                    <th><img src="./assets/img/polonia.gif" alt=""> Polonia</th>
-                    <th id="ptsPol">0</th>
+                    <th><img src="./assets/img/./Grupo-A/paisesbajos.gif" alt=""> Paises bajos</th>
+                    <th id="ptsPai">0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
                     <th>0</th>
-                    <th>0</th>
+                    <th id="gfPai">0</th>
                     <th>0</th>
                     <th>0</th>
                 </tr>
             </table>
         </div>
         <br>
+
+        <div class="row" id="fixture">
+            <div class="col-xs-12 col-sm-4" id="fecha1">
+                <div id="partido1">
+
+                    <label for="sen1"><img src="./assets/img/Grupo-A/senegal.gif" alt=""> SEN</label>
+                    <input type="number" name="sen1" id="sen1" size="4" value="0">
+                    <input type="number" name="pai1" id="pai1" size="4" value="0">
+                    <label for="pai1"><img src="./assets/img/Grupo-A/paisesbajos.gif" alt=""> PAI</label>
+                    <button id="1a"> ✓</button>
+                </div>
+                <div id="partido2">
+                    <label for="qat1"><img src="./assets/img/Grupo-A/qatar.gif" alt=""> QAT</label>
+                    <input type="number" name="qat1" id="qat1" size="4" value="0">
+                    <input type="number" name="ecu1" id="ecu1" size="4" value="0">
+                    <label for="ecu1"><img src="./assets/img/Grupo-A/ecuador.gif" alt=""> ECU</label>
+                    <button id="2a"> ✓</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4" id="fecha2">
+                <div id="partido1">
+
+                    <label for="qat2"><img src="./assets/img/Grupo-A/qatar.gif" alt=""> QAT</label>
+                    <input type="number" name="qat2" id="qat2" size="4" value="0">
+                    <input type="number" name="sen2" id="sen2" size="4" value="0">
+                    <label for="sen2"><img src="./assets/img/Grupo-A/senegal.gif" alt=""> SEN</label>
+                    <button id="3a"> ✓</button>
+                </div>
+                <div id="partido2">
+                    <label for="pai2"><img src="./assets/img/Grupo-A/paisesbajos.gif" alt=""> PAI</label>
+                    <input type="number" name="pai2" id="pai2" size="4" value="0">
+                    <input type="number" name="ecu2" id="ecu2" size="4" value="0">
+                    <label for="ecu2"><img src="./assets/img/Grupo-A/ecuador.gif" alt=""> ECU</label>
+                    <button id="4a"> ✓</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4" id="fecha3">
+                <div id="partido1">
+
+                    <label for="pai3"><img src="./assets/img/Grupo-A/paisesbajos.gif" alt=""> PAI</label>
+                    <input type="number" name="pai3" id="pai3" size="4" value="0">
+                    <input type="number" name="qat3" id="qat3" size="4" value="0">
+                    <label for="qat3"><img src="./assets/img/Grupo-A/qatar.gif" alt=""> QAT</label>
+                    <button id="5a"> ✓</button>
+                </div>
+                <div id="partido2">
+                    <label for="ecu3"><img src="./assets/img/Grupo-A/ecuador.gif" alt=""> ECU</label>
+                    <input type="number" name="ecu3" id="ecu3" size="4" value="0">
+                    <input type="number" name="sen3" id="sen3" size="4" value="0">
+                    <label for="sen3"><img src="./assets/img/Grupo-A/senegal.gif" alt=""> SEN</label>
+                    <button id="6a"> ✓</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>Grupo B</h2>
+        <div class="selecciones" id="selecciones">
+            <div class="card" style="width: 10rem;">
+                <img src="./assets/img/./Grupo-B/escudo.inglaterra.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Inglaterra</h3>
+                    <form action="" class="formfav">
+                        <input type="hidden" id="selec1">
+                        <button id="argfav">Agregar a favoritos</button>
+                    </form>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="./assets/img/./Grupo-B/escudo.iran.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Iran</h3>
+                    <form action="" class="formfav">
+                        <input type="hidden" id="selec2">
+                        <button id="arabfav">Agregar a favoritos</button>
+                    </form>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="./assets/img/./Grupo-B/escudo.usa.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Estados Unidos</h3>
+                    <form action="" class="formfav">
+                        <input type="hidden" id="selec3">
+                        <button id="mexfav">Agregar a favoritos</button>
+                    </form>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="./assets/img/./Grupo-B/escudo.gales.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 id="seleccion">Gales</h3>
+                    <form action="" class="formfav">
+                        <input type="hidden" id="selec4">
+                        <button id="polfav">Agregar a favoritos</button>
+                    </form>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <section>
+
+            <div id="grupo">
+                <table>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Equipo</th>
+                        <th>Pts</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>DIF</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th><img src="./assets/img/./Grupo-B/inglaterra.gif" alt=""> Inglaterra</th>
+                        <th id="ptsIng">0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th><img src="./assets/img/./Grupo-B/iran.gif" alt=""> Iran</th>
+                        <th id="ptsIran">0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th><img src="./assets/img/./Grupo-B/usa.gif" alt=""> EEUU</th>
+                        <th id="ptsEeuu">0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th><img src="./assets/img/./Grupo-B/gales.gif" alt=""> Gales</th>
+                        <th id="ptsGal">0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>0</th>
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+            <div class="row" id="fixture">
+                <div class="col-xs-12 col-sm-4" id="fecha1">
+                    <div id="partido1">
+
+                        <label for="ing1"><img src="./assets/img/Grupo-B/inglaterra.gif" alt=""> ING</label>
+                        <input type="number" name="ing1" id="ing1" size="4" value="0">
+                        <input type="number" name="ira1" id="ira1" size="4" value="0">
+                        <label for="ira1"><img src="./assets/img/Grupo-B/iran.gif" alt=""> IRA</label>
+                        <button id="verResultado"> Ver Resultado</button>
+                    </div>
+                    <div id="partido2">
+                        <label for="usa1"><img src="./assets/img/Grupo-B/usa.gif" alt=""> USA</label>
+                        <input type="number" name="usa1" id="usa1" size="4" value="0">
+                        <input type="number" name="gal1" id="gal1" size="4" value="0">
+                        <label for="gal1"><img src="./assets/img/Grupo-B/gales.gif" alt=""> GAL</label>
+                        <button id="verResultado"> Ver Resultado</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4" id="fecha2">
+                    <div id="partido1">
+
+                        <label for="gal2"><img src="./assets/img/Grupo-B/gales.gif" alt=""> GAL</label>
+                        <input type="number" name="gal2" id="gal2" size="4" value="0">
+                        <input type="number" name="ira2" id="ira2" size="4" value="0">
+                        <label for="ira2"><img src="./assets/img/Grupo-A/senegal.gif" alt=""> IRA</label>
+                        <button id="verResultadoDos"> Ver Resultado</button>
+                    </div>
+                    <div id="partido2">
+                        <label for="ing2"><img src="./assets/img/Grupo-B/inglaterra.gif" alt=""> ING</label>
+                        <input type="number" name="ing2" id="ing2" size="4" value="0">
+                        <input type="number" name="usa2" id="usa2" size="4" value="0">
+                        <label for="usa2"><img src="./assets/img/Grupo-B/usa.gif" alt=""> USA</label>
+                        <button id="verResultado"> Ver Resultado</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4" id="fecha3">
+                    <div id="partido1">
+
+                        <label for="gal3"><img src="./assets/img/Grupo-B/gales.gif" alt=""> GAL</label>
+                        <input type="number" name="gal3" id="gal3" size="4" value="0">
+                        <input type="number" name="ing3" id="ing3" size="4" value="0">
+                        <label for="ing3"><img src="./assets/img/Grupo-B/inglaterra.gif" alt=""> ING</label>
+                        <button id="verResultadoTres"> Ver Resultado</button>
+                    </div>
+                    <div id="partido2">
+                        <label for="ira3"><img src="./assets/img/Grupo-B/iran.gif" alt=""> IRA</label>
+                        <input type="number" name="ira3" id="ira3" size="4" value="0">
+                        <input type="number" name="usa3" id="usa3" size="4" value="0">
+                        <label for="usa3"><img src="./assets/img/Grupo-B/usa.gif" alt=""> USA</label>
+                        <button id="verResultado"> Ver Resultado</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Grupo C</h2>
+            <div class="selecciones" id="selecciones">
+                <div class="card" style="width: 10rem;">
+                    <img src="./assets/img/./Grupo-C/escudo.argentina.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 id="seleccion">Argentina</h3>
+                        <form action="" class="formfav">
+                            <input type="hidden" id="selec1">
+                            <button id="argfav">Agregar a favoritos</button>
+                        </form>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 10rem;">
+                    <img src="./assets/img/./Grupo-C/escudo.arabiasaudita.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 id="seleccion">Arabia Saudita</h3>
+                        <form action="" class="formfav">
+                            <input type="hidden" id="selec2">
+                            <button id="arabfav">Agregar a favoritos</button>
+                        </form>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 10rem;">
+                    <img src="./assets/img/./Grupo-C/escudo.mexico.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 id="seleccion">Mexico</h3>
+                        <form action="" class="formfav">
+                            <input type="hidden" id="selec3">
+                            <button id="mexfav">Agregar a favoritos</button>
+                        </form>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="card" style="width: 10rem;">
+                    <img src="./assets/img/./Grupo-C/escudo.polonia.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 id="seleccion">Polonia</h3>
+                        <form action="" class="formfav">
+                            <input type="hidden" id="selec4">
+                            <button id="polfav">Agregar a favoritos</button>
+                        </form>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <section>
+
+                <div id="grupo">
+                    <table>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Equipo</th>
+                            <th>Pts</th>
+                            <th>PJ</th>
+                            <th>PG</th>
+                            <th>PE</th>
+                            <th>PP</th>
+                            <th>GF</th>
+                            <th>GC</th>
+                            <th>DIF</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th><img src="./assets/img/./Grupo-C/argentina.gif" alt=""> Argentina</th>
+                            <th id="ptsArg">0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th><img src="./assets/img/./Grupo-C/arabiasaudita.gif" alt=""> Arabia Saudita</th>
+                            <th id="ptsArab">0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th><img src="./assets/img/./Grupo-C/mexico.gif" alt=""> Mexico</th>
+                            <th id="ptsMex">0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th><img src="./assets/img/./Grupo-C/polonia.gif" alt=""> Polonia</th>
+                            <th id="ptsPol">0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+
+                <div class="row" id="fixture">
+                    <div class="col-xs-12 col-sm-4" id="fecha1">
+                        <div id="partido1">
+
+                            <label for="arg1"><img src="./assets/img/Grupo-C/argentina.gif" alt=""> ARG</label>
+                            <input type="number" name="arg1" id="arg1" size="4" value="0">
+                            <input type="number" name="arab1" id="arab1" size="4" value="0">
+                            <label for="arab1"><img src="./assets/img/Grupo-C/arabiasaudita.gif" alt=""> ARA</label>
+                            <button id="verResultado123"> Ver Resultado</button>
+                        </div>
+                        <div id="partido2">
+                            <label for="mex1"><img src="./assets/img/Grupo-C/mexico.gif" alt=""> MEX</label>
+                            <input type="number" name="mex1" id="mex1" size="4" value="0">
+                            <input type="number" name="pol1" id="pol1" size="4" value="0">
+                            <label for="pol1"><img src="./assets/img/Grupo-C/polonia.gif" alt=""> POL</label>
+                            <button id="verResultado"> Ver Resultado</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4" id="fecha2">
+                        <div id="partido1">
+
+                            <label for="arg2"><img src="./assets/img/Grupo-C/argentina.gif" alt=""> ARG</label>
+                            <input type="number" name="arg2" id="arg2" size="4" value="0">
+                            <input type="number" name="mex2" id="mex2" size="4" value="0">
+                            <label for="mex2"><img src="./assets/img/Grupo-C/mexico.gif" alt=""> MEX</label>
+                            <button id="verResultadoDos123"> Ver Resultado</button>
+                        </div>
+                        <div id="partido2">
+                            <label for="pl2"><img src="./assets/img/Grupo-C/polonia.gif" alt=""> POL</label>
+                            <input type="number" name="pol2" id="pol2" size="4" value="0">
+                            <input type="number" name="arab2" id="arab" size="4" value="0">
+                            <label for="arab2"><img src="./assets/img/Grupo-C/arabiasaudita.gif" alt=""> ARA</label>
+                            <button id="verResultado"> Ver Resultado</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4" id="fecha3">
+                        <div id="partido1">
+
+                            <label for="arg3"><img src="./assets/img/Grupo-C/argentina.gif" alt=""> ARG</label>
+                            <input type="number" name="arg3" id="arg3" size="4" value="0">
+                            <input type="number" name="pol3" id="pol3" size="4" value="0">
+                            <label for="pol3"><img src="./assets/img/Grupo-C/polonia.gif" alt=""> POL</label>
+                            <button id="verResultadoTres123"> Ver Resultado</button>
+                        </div>
+                        <div id="partido2">
+                            <label for="mex3"><img src="./assets/img/Grupo-C/mexico.gif" alt=""> MEX</label>
+                            <input type="number" name="mex3" id="mex3" size="4" value="0">
+                            <input type="number" name="arab3" id="arab3" size="4" value="0">
+                            <label for="arab3"><img src="./assets/img/Grupo-C/arabiasaudita.gif" alt=""> ARA</label>
+                            <button id="verResultado"> Ver Resultado</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 
         <div id="fixture">
             <div id="fecha1">
-                <label for="arg1">Argentina</label>
-                <input type="number" name="arg1" id="arg1" size="4" value="0">
-                <input type="number" name="arab1" id="arab1" size="4" value="0">
-                <label for="arab1">Arabia</label>
-                <button id="verResultado"> Ver Resultado</button>
+                <div id="partido1">
+
+                    <label for="arg1">Argentina</label>
+                    <input type="number" name="arg1" id="arg1" size="4" value="0">
+                    <input type="number" name="arab1" id="arab1" size="4" value="0">
+                    <label for="arab1">Arabia</label>
+                    <button id="verResultado"> Ver Resultado</button>
+                </div>
+                <div id="partido2">
+                    <label for="arg1">Mexico</label>
+                    <input type="number" name="arg1" id="arg1" size="4" value="0">
+                    <input type="number" name="arab1" id="arab1" size="4" value="0">
+                    <label for="arab1">Polonia</label>
+                    <button id="verResultado"> Ver Resultado</button>
+                </div>
+                
                 
             </div>
         <br>
@@ -159,12 +628,886 @@
                 
             </div>
 
-        </div>
+        </div> -->
+
+                <h2>Grupo D</h2>
+                <div class="selecciones" id="selecciones">
+                    <div class="card" style="width: 10rem;">
+                        <img src="./assets/img/./Grupo-D/escudo.francia.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 id="seleccion">Francia</h3>
+                            <form action="" class="formfav">
+                                <input type="hidden" id="selec1">
+                                <button id="argfav">Agregar a favoritos</button>
+                            </form>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem;">
+                        <img src="./assets/img/./Grupo-D/escudo.australia.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 id="seleccion">Australia</h3>
+                            <form action="" class="formfav">
+                                <input type="hidden" id="selec2">
+                                <button id="arabfav">Agregar a favoritos</button>
+                            </form>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem;">
+                        <img src="./assets/img/./Grupo-D/escudo.dinamarca.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 id="seleccion">Dinamarca</h3>
+                            <form action="" class="formfav">
+                                <input type="hidden" id="selec3">
+                                <button id="mexfav">Agregar a favoritos</button>
+                            </form>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem;">
+                        <img src="./assets/img/./Grupo-D/escudo.tunez.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 id="seleccion">Tunez</h3>
+                            <form action="" class="formfav">
+                                <input type="hidden" id="selec4">
+                                <button id="polfav">Agregar a favoritos</button>
+                            </form>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+
+                </div>
 
 
-    </section>
-    <footer>
-        <h4>Desafio final Coderhouse</h4>
-    </footer>
+                <section>
+
+                    <div id="grupo">
+                        <table>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Equipo</th>
+                                <th>Pts</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>GF</th>
+                                <th>GC</th>
+                                <th>DIF</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th><img src="./assets/img/./Grupo-D/francia.gif" alt=""> Francia</th>
+                                <th id="ptsFra">0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <th><img src="./assets/img/./Grupo-D/australia.gif" alt=""> Australia</th>
+                                <th id="ptsAus">0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <th><img src="./assets/img/./Grupo-D/dinamarca.gif" alt=""> Dinamarca</th>
+                                <th id="ptsDin">0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <th><img src="./assets/img/./Grupo-D/tunez.gif" alt=""> Tunez</th>
+                                <th id="ptsTun">0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <br>
+            
+                    <div class="row" id="fixture">
+                        <div class="col-xs-12 col-sm-4" id="fecha1">
+                            <div id="partido1">
+        
+                                <label for="fra1"><img src="./assets/img/Grupo-D/francia.gif" alt=""> FRA</label>
+                                <input type="number" name="fra1" id="fra1" size="4" value="0">
+                                <input type="number" name="aus1" id="aus1" size="4" value="0">
+                                <label for="aus1"><img src="./assets/img/Grupo-D/australia.gif" alt=""> AUS</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="din1"><img src="./assets/img/Grupo-D/dinamarca.gif" alt=""> DIN</label>
+                                <input type="number" name="din1" id="din1" size="4" value="0">
+                                <input type="number" name="tun1" id="tun1" size="4" value="0">
+                                <label for="tun1"><img src="./assets/img/Grupo-D/tunez.gif" alt=""> TUN</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha2">
+                            <div id="partido1">
+        
+                                <label for="tun2"><img src="./assets/img/Grupo-D/tunez.gif" alt=""> TUN</label>
+                                <input type="number" name="tun2" id="tun2" size="4" value="0">
+                                <input type="number" name="aus2" id="aus2" size="4" value="0">
+                                <label for="aus2"><img src="./assets/img/Grupo-D/australia.gif" alt=""> AUS</label>
+                                <button id="verResultadoDos"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="fra2"><img src="./assets/img/Grupo-D/francia.gif" alt=""> FRA</label>
+                                <input type="number" name="fra2" id="fra2" size="4" value="0">
+                                <input type="number" name="din2" id="din2" size="4" value="0">
+                                <label for="din2"><img src="./assets/img/Grupo-D/dinamarca.gif" alt=""> DIN</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha3">
+                            <div id="partido1">
+        
+                                <label for="tun3"><img src="./assets/img/Grupo-D/tunez.gif" alt=""> TUN</label>
+                                <input type="number" name="tun3" id="tun3" size="4" value="0">
+                                <input type="number" name="fra3" id="fra3" size="4" value="0">
+                                <label for="fra3"><img src="./assets/img/Grupo-D/francia.gif" alt=""> FRA</label>
+                                <button id="verResultadoTres"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="aus3"><img src="./assets/img/Grupo-D/australia.gif" alt=""> AUS</label>
+                                <input type="number" name="aus3" id="aus3" size="4" value="0">
+                                <input type="number" name="din3" id="din3" size="4" value="0">
+                                <label for="din3"><img src="./assets/img/Grupo-D/dinamarca.gif" alt=""> DIN</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Grupo E</h2>
+                    <div class="selecciones" id="selecciones">
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-E/escudo.espana.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">España</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec1">
+                                    <button id="argfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-E/escudo.costa_rica.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Costa Rica</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec2">
+                                    <button id="arabfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-E/escudo.alemania.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Alemania</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec3">
+                                    <button id="mexfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-E/escudo.japon.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Japon</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec4">
+                                    <button id="polfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <section>
+
+                        <div id="grupo">
+                            <table>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Equipo</th>
+                                    <th>Pts</th>
+                                    <th>PJ</th>
+                                    <th>PG</th>
+                                    <th>PE</th>
+                                    <th>PP</th>
+                                    <th>GF</th>
+                                    <th>GC</th>
+                                    <th>DIF</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th><img src="./assets/img/./Grupo-E/espana.gif" alt=""> España</th>
+                                    <th id="ptsEsp">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th><img src="./assets/img/./Grupo-E/costarica.gif" alt=""> Costa Rica</th>
+                                    <th id="ptsCost">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <th><img src="./assets/img/./Grupo-E/alemania.gif" alt=""> Alemania</th>
+                                    <th id="ptsAle">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <th><img src="./assets/img/./Grupo-E/japon.gif" alt=""> Japon</th>
+                                    <th id="ptsJap">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <br>
+            
+                    <div class="row" id="fixture">
+                        <div class="col-xs-12 col-sm-4" id="fecha1">
+                            <div id="partido1">
+        
+                                <label for="ale1"><img src="./assets/img/Grupo-E/alemania.gif" alt=""> ALE</label>
+                                <input type="number" name="ale1" id="ale1" size="4" value="0">
+                                <input type="number" name="jap1" id="jap1" size="4" value="0">
+                                <label for="jap1"><img src="./assets/img/Grupo-E/japon.gif" alt=""> JAP</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="esp1"><img src="./assets/img/Grupo-E/espana.gif" alt=""> ESP</label>
+                                <input type="number" name="esp1" id="esp1" size="4" value="0">
+                                <input type="number" name="cos1" id="cos1" size="4" value="0">
+                                <label for="cos"><img src="./assets/img/Grupo-E/costarica.gif" alt=""> COS</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha2">
+                            <div id="partido1">
+        
+                                <label for="jap2"><img src="./assets/img/Grupo-E/japon.gif" alt=""> JAP</label>
+                                <input type="number" name="jap2" id="jap2" size="4" value="0">
+                                <input type="number" name="cos2" id="cos2" size="4" value="0">
+                                <label for="cos2"><img src="./assets/img/Grupo-E/costarica.gif" alt=""> COS</label>
+                                <button id="verResultadoDos"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="esp2"><img src="./assets/img/Grupo-E/espana.gif" alt=""> ESP</label>
+                                <input type="number" name="esp2" id="esp2" size="4" value="0">
+                                <input type="number" name="ale2" id="ale2" size="4" value="0">
+                                <label for="ale2"><img src="./assets/img/Grupo-E/alemania.gif" alt=""> ALE</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha3">
+                            <div id="partido1">
+        
+                                <label for="jap3"><img src="./assets/img/Grupo-E/japon.gif" alt=""> JAP</label>
+                                <input type="number" name="jap3" id="jap3" size="4" value="0">
+                                <input type="number" name="esp3" id="esp3" size="4" value="0">
+                                <label for="esp3"><img src="./assets/img/Grupo-E/espana.gif" alt=""> ESP</label>
+                                <button id="verResultadoTres"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="cos3"><img src="./assets/img/Grupo-D/australia.gif" alt=""> COS</label>
+                                <input type="number" name="cos3" id="cos3" size="4" value="0">
+                                <input type="number" name="din3" id="din3" size="4" value="0">
+                                <label for="ale3"><img src="./assets/img/Grupo-E/alemania.gif" alt=""> ALE</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </section>
+                    <h2>Grupo F</h2>
+                    <div class="selecciones" id="selecciones">
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-F/escudo.belgica.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Belgica</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec1">
+                                    <button id="argfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-F/escudo.canada.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Canada</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec2">
+                                    <button id="arabfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-F/escudo.marruecos.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Marruecos</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec3">
+                                    <button id="mexfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-F/escudo.croacia.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Croacia</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec4">
+                                    <button id="polfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <section>
+
+                        <div id="grupo">
+                            <table>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Equipo</th>
+                                    <th>Pts</th>
+                                    <th>PJ</th>
+                                    <th>PG</th>
+                                    <th>PE</th>
+                                    <th>PP</th>
+                                    <th>GF</th>
+                                    <th>GC</th>
+                                    <th>DIF</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th><img src="./assets/img/./Grupo-F/belgica.gif" alt=""> Belgica</th>
+                                    <th id="ptsBel">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th><img src="./assets/img/./Grupo-F/canada.gif" alt=""> Canada</th>
+                                    <th id="ptsCan">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <th><img src="./assets/img/./Grupo-F/marruecos.png" alt=""> Marruecos</th>
+                                    <th id="ptsMar">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <th><img src="./assets/img/./Grupo-F/croacia.gif" alt=""> Croacia</th>
+                                    <th id="ptsCro">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <br>
+            
+                    <div class="row" id="fixture">
+                        <div class="col-xs-12 col-sm-4" id="fecha1">
+                            <div id="partido1">
+        
+                                <label for="mar1"><img src="./assets/img/Grupo-F/marruecos.png" alt=""> MAR</label>
+                                <input type="number" name="mar1" id="mar1" size="4" value="0">
+                                <input type="number" name="cro1" id="cro1" size="4" value="0">
+                                <label for="cro1"><img src="./assets/img/Grupo-F/croacia.gif" alt=""> CRO</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="bel1"><img src="./assets/img/Grupo-F/belgica.gif" alt=""> BEL</label>
+                                <input type="number" name="bel1" id="bel1" size="4" value="0">
+                                <input type="number" name="can1" id="can1" size="4" value="0">
+                                <label for="can1"><img src="./assets/img/Grupo-F/canada.gif" alt=""> CAN</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha2">
+                            <div id="partido1">
+        
+                                <label for="bel2"><img src="./assets/img/Grupo-F/belgica.gif" alt=""> BEL</label>
+                                <input type="number" name="bel2" id="bel2" size="4" value="0">
+                                <input type="number" name="mar2" id="mar2" size="4" value="0">
+                                <label for="mar2"><img src="./assets/img/Grupo-F/marruecos.png" alt=""> MAR</label>
+                                <button id="verResultadoDos"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="cro2"><img src="./assets/img/Grupo-F/croacia.gif" alt=""> CRO</label>
+                                <input type="number" name="cro2" id="cro2" size="4" value="0">
+                                <input type="number" name="can2" id="can2" size="4" value="0">
+                                <label for="can2"><img src="./assets/img/Grupo-F/canada.gif" alt=""> CAN</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha3">
+                            <div id="partido1">
+        
+                                <label for="cro3"><img src="./assets/img/Grupo-F/croacia.gif" alt=""> CRO</label>
+                                <input type="number" name="cro3" id="cro3" size="4" value="0">
+                                <input type="number" name="bel3" id="bel3" size="4" value="0">
+                                <label for="bel3"><img src="./assets/img/Grupo-F/belgica.gif" alt=""> BEL</label>
+                                <button id="verResultadoTres"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="can3"><img src="./assets/img/Grupo-F/canada.gif" alt=""> CAN</label>
+                                <input type="number" name="can3" id="can3" size="4" value="0">
+                                <input type="number" name="mar3" id="mar3" size="4" value="0">
+                                <label for="mar3"><img src="./assets/img/Grupo-F/marruecos.png" alt=""> MAR</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </section>
+
+                    <h2>Grupo G</h2>
+                    <div class="selecciones" id="selecciones">
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-G/escudo.brasil.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Brasil</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec1">
+                                    <button id="argfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-G/escudo.serbia.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Serbia</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec2">
+                                    <button id="arabfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-G/escudo.suiza.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Suiza</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec3">
+                                    <button id="mexfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-G/escudo.camerun.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Camerun</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec4">
+                                    <button id="polfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <section>
+
+                        <div id="grupo">
+                            <table>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Equipo</th>
+                                    <th>Pts</th>
+                                    <th>PJ</th>
+                                    <th>PG</th>
+                                    <th>PE</th>
+                                    <th>PP</th>
+                                    <th>GF</th>
+                                    <th>GC</th>
+                                    <th>DIF</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th><img src="./assets/img/./Grupo-G/brasil.gif" alt=""> Brasil</th>
+                                    <th id="ptsBra">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th><img src="./assets/img/./Grupo-G/serbia.gif" alt=""> Serbia</th>
+                                    <th id="ptsSer">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <th><img src="./assets/img/./Grupo-G/suiza.png" alt=""> Suiza</th>
+                                    <th id="ptsSui">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <th><img src="./assets/img/./Grupo-G/camerun.gif" alt=""> Camerun</th>
+                                    <th id="ptsCam">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <br>
+            
+                    <div class="row" id="fixture">
+                        <div class="col-xs-12 col-sm-4" id="fecha1">
+                            <div id="partido1">
+        
+                                <label for="sui1"><img src="./assets/img/Grupo-G/suiza.png" alt=""> SUI</label>
+                                <input type="number" name="sui1" id="sui1" size="4" value="0">
+                                <input type="number" name="cam1" id="cam1" size="4" value="0">
+                                <label for="cam1"><img src="./assets/img/Grupo-G/camerun.gif" alt=""> CAM</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="bra1"><img src="./assets/img/Grupo-G/brasil.gif" alt=""> BRA</label>
+                                <input type="number" name="bra1" id="bra1" size="4" value="0">
+                                <input type="number" name="ser1" id="ser1" size="4" value="0">
+                                <label for="ser1"><img src="./assets/img/Grupo-G/serbia.gif" alt=""> SER</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha2">
+                            <div id="partido1">
+        
+                                <label for="cam2"><img src="./assets/img/Grupo-G/camerun.gif" alt=""> CAM</label>
+                                <input type="number" name="cam2" id="cam2" size="4" value="0">
+                                <input type="number" name="ser2" id="ser2" size="4" value="0">
+                                <label for="ser2"><img src="./assets/img/Grupo-F/marruecos.png" alt=""> SER</label>
+                                <button id="verResultadoDos"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="bra2"><img src="./assets/img/Grupo-G/brasil.gif" alt=""> BRA</label>
+                                <input type="number" name="bra2" id="bra2" size="4" value="0">
+                                <input type="number" name="sui2" id="sui2" size="4" value="0">
+                                <label for="sui2"><img src="./assets/img/Grupo-G/suiza.png" alt=""> SUI</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha3">
+                            <div id="partido1">
+        
+                                <label for="cam3"><img src="./assets/img/Grupo-G/camerun.gif" alt=""> CAM</label>
+                                <input type="number" name="cam3" id="cam3" size="4" value="0">
+                                <input type="number" name="bra3" id="bra3" size="4" value="0">
+                                <label for="bra3"><img src="./assets/img/Grupo-G/brasil.gif" alt=""> BRA</label>
+                                <button id="verResultadoTres"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="ser3"><img src="./assets/img/Grupo-G/serbia.gif" alt=""> SER</label>
+                                <input type="number" name="ser3" id="ser3" size="4" value="0">
+                                <input type="number" name="sui3" id="sui3" size="4" value="0">
+                                <label for="sui3"><img src="./assets/img/Grupo-G/suiza.png" alt=""> SUI</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </section>
+
+                    <h2>Grupo H</h2>
+                    <div class="selecciones" id="selecciones">
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/Grupo-H/escudo.portugal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Portugal</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec1">
+                                    <button id="argfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-H/escudo.ghana.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Ghana</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec2">
+                                    <button id="arabfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-H/escudo.uruguay.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Uruguay</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec3">
+                                    <button id="mexfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <img src="./assets/img/./Grupo-H/escudo.coreadelsur.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 id="seleccion">Core del Sur</h3>
+                                <form action="" class="formfav">
+                                    <input type="hidden" id="selec4">
+                                    <button id="polfav">Agregar a favoritos</button>
+                                </form>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <section>
+
+                        <div id="grupo">
+                            <table>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Equipo</th>
+                                    <th>Pts</th>
+                                    <th>PJ</th>
+                                    <th>PG</th>
+                                    <th>PE</th>
+                                    <th>PP</th>
+                                    <th>GF</th>
+                                    <th>GC</th>
+                                    <th>DIF</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th><img src="./assets/img/./Grupo-H/portugal.gif" alt=""> Portugal</th>
+                                    <th id="ptsPor">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th><img src="./assets/img/./Grupo-H/ghana.gif" alt=""> Ghana</th>
+                                    <th id="ptsGan">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <th><img src="./assets/img/./Grupo-H/uruguay.gif" alt=""> Ururguay</th>
+                                    <th id="ptsUru">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <th><img src="./assets/img/./Grupo-H/coreadelsur.gif" alt=""> Corea</th>
+                                    <th id="ptsCor">0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <br>
+            
+                    <div class="row" id="fixture">
+                        <div class="col-xs-12 col-sm-4" id="fecha1">
+                            <div id="partido1">
+        
+                                <label for="uru1"><img src="./assets/img/Grupo-H/uruguay.gif" alt=""> URU</label>
+                                <input type="number" name="uru1" id="uru1" size="4" value="0">
+                                <input type="number" name="cor1" id="cor1" size="4" value="0">
+                                <label for="cor1"><img src="./assets/img/Grupo-H/coreadelsur.gif" alt=""> COR</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="por1"><img src="./assets/img/Grupo-H/portugal.gif" alt=""> POR</label>
+                                <input type="number" name="por1" id="por1" size="4" value="0">
+                                <input type="number" name="gha1" id="gha1" size="4" value="0">
+                                <label for="gha1"><img src="./assets/img/Grupo-H/ghana.gif" alt=""> GHA</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha2">
+                            <div id="partido1">
+        
+                                <label for="cor2"><img src="./assets/img/Grupo-H/coreadelsur.gif" alt=""> COR</label>
+                                <input type="number" name="cor2" id="cor2" size="4" value="0">
+                                <input type="number" name="gha2" id="gha2" size="4" value="0">
+                                <label for="gha2"><img src="./assets/img/Grupo-H/ghana.gif" alt=""> GHA</label>
+                                <button id="verResultadoDos"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="por2"><img src="./assets/img/Grupo-H/portugal.gif" alt=""> POR</label>
+                                <input type="number" name="por2" id="por2" size="4" value="0">
+                                <input type="number" name="uru2" id="uru2" size="4" value="0">
+                                <label for="uru2"><img src="./assets/img/Grupo-H/uruguay.gif" alt=""> URU</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4" id="fecha3">
+                            <div id="partido1">
+        
+                                <label for="cor3"><img src="./assets/img/Grupo-H/coreadelsur.gif" alt=""> COR</label>
+                                <input type="number" name="cor3" id="cor3" size="4" value="0">
+                                <input type="number" name="por3" id="por3" size="4" value="0">
+                                <label for="por3"><img src="./assets/img/Grupo-H/portugal.gif" alt=""> POR</label>
+                                <button id="verResultadoTres"> Ver Resultado</button>
+                            </div>
+                            <div id="partido2">
+                                <label for="gha3"><img src="./assets/img/Grupo-H/ghana.gif" alt=""> GHA</label>
+                                <input type="number" name="gha3" id="gha3" size="4" value="0">
+                                <input type="number" name="uru3" id="uru3" size="4" value="0">
+                                <label for="uru3"><img src="./assets/img/Grupo-H/uruguay.gif" alt=""> URU</label>
+                                <button id="verResultado"> Ver Resultado</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    </section>
+                    <footer>
+                        <h4>Desafio final Coderhouse</h4>
+                    </footer>
 </body>
+
 </html>

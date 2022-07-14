@@ -1,0 +1,35 @@
+[
+    {
+        "equipo": "Brasil",
+        "veces": 5    
+    },
+    {
+        "equipo": "Alemania",
+        "veces": 4
+    },
+    {
+        "equipo": "Italia",
+        "veces": 4    
+    },
+    {
+        "equipo": "Argentina",
+        "veces": 2
+    },
+    {
+        "equipo": "Francia",
+        "veces": 2
+    },
+    {
+        "equipo": "Uruguay",
+        "veces": 2    
+    },
+    {
+        "equipo": "España",
+        "veces": 1    
+    },
+    {
+        "equipo": "Inglaterra",
+        "veces": 1    
+    }
+
+]
