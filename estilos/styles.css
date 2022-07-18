@@ -114,6 +114,7 @@ body {
 }
 
 h3, h4, h5{
+    font-size: 20px;
     color: #fff;
     text-align: center;
 
@@ -165,6 +166,12 @@ button {
     
 }
 
+.resultado {
+    width: 25%;
+    height: 25px;
+    font-size: 15px;
+}
+
 .container-estadisticas{
     display: flex;
     justify-content: center;
@@ -178,6 +185,14 @@ h2{
     justify-content: center;
 }
 footer{
+    margin-top: 30px;
     font-size: 14px;
 
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    list-style: none;
 }
